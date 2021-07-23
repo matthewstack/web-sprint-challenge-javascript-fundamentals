@@ -19,7 +19,7 @@ myFunction();
 
 
 
-
+// 
 // 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
