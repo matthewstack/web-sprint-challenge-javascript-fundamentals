@@ -26,13 +26,37 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. Explain the differences between `.map`, `.reduce` and `.filter` and describe a use case for each. 
 
+        .map - This allows you to manipulate data and return in in a new array.  You could use this to calculate population density of each state with using keys for state population and state area.
+
+        .reduce - This allows you to multiply or add values from an array into a single value.  You could use this to add up the population of all the states and return the sum.
+
+        .filter - This allows you to filter data by creating a condition for a key value that's true of false.  You could filter animal by species type and return a specific species of animal. 
+
 2. Explain the difference between a callback and a higher order function.
+
+        A callback function lets you pass a function into another function as an arguement.  Usually you put cb on the end of the function name for the parameter or just use callback. A higher order function is a function that can receive other functions as arguements (callback functions).
 
 3. Explain what a closure is.
 
+        Closure is when a nested function grabs a variable defined out of the nested function's scope.  It can grab this from an outer function, but not a nested inner function.
+
 4. Describe the four principles of the 'this' keyword.
 
+        If there is no context for 'this', it is window binding.  In the global object or the object within the window or browser. If strict mode is used, it will return undefined. 
+        
+        Implicit binding is only used with object methods.  It is the most common.  'this' refers to the left of the dot when the method is invoked. 
+
+        Explicit binding uses .call, .apply or .bind. to explicitly state what keyword 'this" refers to. 
+            .call - Immediately invokes the function and passes arguements one by one
+            .apply - Also immediately invokes the function but pases the arguements as an array
+            .bind - Passes the arguements one by one but does not invoke it.  It serves as a brand new function that can be invoked later.
+
+        New binding - When a function is invoked with a new keyword inside of it, that function is bound to the new object created. 'This' refers to the newly constructed object.
+
+
 5. Why do we need super() in an extended class?
+
+        Super is used to call functions on the parent object. It abstracts object.create() and .call. Using extend alone would attach a child to the parent but not give access to anything within it.  
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade. 
 
