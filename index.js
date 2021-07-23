@@ -18,9 +18,9 @@ myFunction();
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
 
+// It's within the scope.  Functions can reach further down into nested variables but not upwards. 
 
-// 
-// 
+ 
 /* 🚀🚀🚀 Task 2: Counter 🚀🚀🚀 */
 /* Use summation to do the following:
     1. Receive a number 
@@ -28,10 +28,14 @@ myFunction();
     
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
-function summation(/*Your Code Here*/) {
-  /*Your Code Here*/
 
-  }
+function summation(n) {
+  let theTotal = 0;
+  for (let i = n; i > 0; i-- ){
+    theTotal += i;}
+  return theTotal;
+}
+
  
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
