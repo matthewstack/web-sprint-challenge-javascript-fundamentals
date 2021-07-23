@@ -60,26 +60,35 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-function animalNames(data){
-  const displayNames = [];
-  data.forEach(function(item){
-    return displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
-  });
-  return displayNames;
-}
+  function animalNames(data){
+    const displayNames = [];
+    data.forEach(function(item){
+      return displayNames.push(`name: ${item.animal_name}, scientific: ${item.scientific_name}`);
+    });
+    return displayNames;
+  }
 
 
-console.log('topic2-request1', animalNames(zooAnimals))
+  console.log('topic2-request1', animalNames(zooAnimals))
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
   Using lowerCaseNames use .map() to create a new array of strings with the animal's names in lowercase and return the new array. 
   For example: ['jackal, asiatic', .....]
   */
 
-  function lowerCaseNames(/*Your Code Here*/){
-    /*Your Code Here*/
-  }
+  // function lowerCaseNames(data){
+  //   const lowerC = data.map(function(item){
+  //     return item.animal_name.toLowerCase();
+  //   })
+  //   return lowerC;
+  // }
   
+  function lowerCaseNames(data){
+    const lowerC = data.map((item) => { return item.animal_name.toLowerCase();})
+    return lowerC;
+  }
+  console.log(lowerCaseNames(zooAnimals))
+
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
   The zoo is concerned about animals with a lower population count. 
